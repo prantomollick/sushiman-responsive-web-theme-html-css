@@ -134,7 +134,7 @@ Open http://localhost:5173 in your browser to view the project.
 
 👥 [@prantomollick](https://www.linkedin.com/in/prantomollick/)
 ❌ [@prantomollick55](https://x.com/prantomollick55)
-✉️
+✉️ [prantomollick01@gmail.com](mailto:prantomollick01@gmail.com)
 🌎 https://prantomollick.com
 
 ## <a name="credit">🧾 Credit</a>

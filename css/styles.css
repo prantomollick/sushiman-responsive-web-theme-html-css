@@ -96,3 +96,223 @@ a {
 
     margin: 3.2rem 0px;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sushi__hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sushi__hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* START: about us media queries */
+@media screen and (max-width: 1024px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us__image {
+        flex-direction: row;
+    }
+    .about-us__image-sushi2 {
+        border-bottom: none;
+    }
+    .about-us__image-sushi3 {
+        border-bottom: none;
+        border-right: 8px solid var(--color-creamson);
+    }
+
+    .about-us__button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-us__image-sushi3 {
+        border-bottom: 8px solid var(--color-creamson);
+        border-right: none;
+    }
+
+    .about-us__button {
+        display: block;
+        bottom: 2rem;
+        right: auto;
+        border-radius: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-us__image-sushi2 img,
+    .about-us__image-sushi3 img {
+        width: 50%;
+        height: 16rem;
+
+        object-fit: contain;
+    }
+
+    .about-us__image div {
+        padding: 3.2rem;
+    }
+
+    .about-us__button {
+        top: 44%;
+    }
+
+    .about-us__content {
+        padding: 3.2rem;
+    }
+}
+
+/* END: about us media queries */
+
+/* START: header media querie */
+@media screen and (max-width: 900px) {
+    .header__nav {
+        background: var(--primary-color);
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__menu-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header__logo {
+        padding-left: 0;
+    }
+}
+/* END: header media queries */
+
+/* START: hero media queries */
+@media screen and (max-width: 1060px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 100%;
+        transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .hero-image h2 {
+        font-size: 7rem;
+        line-height: 9rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero-image h2 {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+
+    .hero-content-info {
+        padding: 3.2rem;
+    }
+
+    .hero-content-info h1 {
+        font-size: 6rem;
+    }
+
+    .hero-content-info p {
+        margin: 3.2rem 0;
+    }
+
+    .hero-content__buttons {
+        margin: 4.1rem 0;
+    }
+}
+/* END: hero media queries */
+
+/* START: popular media queries */
+@media screen and (max-width: 550px) {
+    .popular-foods {
+        padding: 6.4rem 3.2rem;
+    }
+
+    .popular-foods__card,
+    .popular-foods__card.active-card {
+        min-width: 100%;
+    }
+}
+/* END: popular media queries */
+
+/* START: subscribe media queries */
+@media screen and (max-width: 550px) {
+    .subscription {
+        padding: 6.4rem 3.2rem;
+    }
+
+    .subscription h2 {
+        font-size: 6.8rem;
+        line-height: 10rem;
+    }
+
+    .subscription__form {
+        flex-direction: column;
+        gap: 2rem;
+
+        min-width: 100%;
+        border-radius: 2rem;
+        padding: 0;
+
+        border: none;
+    }
+
+    .subscription__form input {
+        min-height: 5rem;
+
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+    }
+
+    .subscription__form button {
+        min-width: 100%;
+    }
+}
+/* END: subscribe media queries */
+
+/* START: trending media queries */
+@media screen and (max-width: 1024px) {
+    .trending-sushi {
+        flex-direction: column;
+    }
+
+    .trending-drinks {
+        flex-direction: column-reverse;
+    }
+
+    .trending__image {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .trending__discover {
+        display: none;
+    }
+
+    .trending__arrow {
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .trending__image img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .trending__content {
+        padding: 32px;
+    }
+}
+/* END: trending media queries */
